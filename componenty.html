@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+	
+		<title>Bootstrap 4</title>
+	</head>
+	<body>
+	
+<h3>Навигация, навбары</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+<a class="navbar-brand" href="#">Navbar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse"id="#navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item active">
+<a class="nav-link" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Disabled</a>
+</li>
+</ul>
+<form class="form-inline ml-auto">
+<input class="form-control" type="search" placeholder="Search">
+<button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<p></p>
+<h3>Навигация, навбары</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="col-3">
+<nav class="nav flex-column nav-pills">
+<a class="nav-item nav-link active" id="nav1-1" data-toggle="tab" aria-controls="tab1-1" href="#tab1-1">Active</a>
+<a class="nav-item nav-link" data-toggle="tab" aria-controls="#tab1-2" href="#tab1-2">Link</a>
+<a class="nav-item nav-link" data-toggle="tab" aria-controls="#tab1-3" href="#tab1-3">Link</a>
+</nav>
+</div>
+<p></p>
+<div class="col-9">
+<div class="tab-content">
+<div class="tab-pane fade show active" id="tab1-1" aria-labelledby="nav1-1">1. Далеко-далёко за синими горами...</div>
+<div class="tab-pane fade" id="tab1-2" aria-labelledby="nav1-2">2. Далеко-далёко за синими горами...</div>
+<div class="tab-pane" id="tab1-3" aria-labelledby="nav1-3">3. Далеко-далёко за синими горами...</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<ul class="nav nav-fill nav-pills">
+<li class="nav-item">
+<a class="nav-link" id="nav2-1" data-toggle="tab" aria-controls="tab2-1" href="#tab2-1">Active</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" id="nav2-2" data-toggle="tab" aria-controls="tab2-2" href="#tab2-2">Link</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="nav2-3" data-toggle="tab" aria-controls="tab2-3" href="#tab2-3">Link</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="tab2-1" aria-labelledby="nav2-1">1. Далеко-далёко за синими горами...</div>
+<div class="tab-pane fade" id="tab2-2" aria-labelledby="nav2-2">2. Далеко-далёко за синими горами...</div>
+<div class="tab-pane fade" id="tab2-3" aria-labelledby="nav2-3">3. Далеко-далёко за синими горами...</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+
+		<h3>Валидация формы</h3>
+		<div class="container text-center mb-6">
+		<div class="row">
+		<div class="col-12">
+		<form class="myForm" novalidate>
+			<div class="form-group row">
+				<label class="col-3" for="exampleInputEmail1">Email адрес</label>
+	<input type="email" class="form-control col-9" id="exampleInputEmail1" aria-describedby="emailHelp"
+	placeholder="Email адрес" required>
+<div class="valid-feedback">Вы ввели верно</div>
+<div class="invalid-feedback">Ошибка</div>
+</div>
+<div class="form-group row">
+<label class="col-3" for="exampleInputPassword1">Пароль</label>
+<input type="password" class="form-control col-9" id="exampleInputPassword1" placeholder="Пароль" required>
+<div class="invalid-feedback">Ошибка</div>
+<div class="valid-feedback">Вы ввели верно</div>
+</div>
+<div class="form-group">
+<label for="exampleFormControlSelect1">Example select</label>
+<select class="form-control" id="exampleFormControlSelect1" required>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+<p></p>
+<p></p>
+<br>
+<div class="form-row">
+<div class="custom-control custom-ckeckbox">
+<input type="ckeckbox" class="custom-control-input" required id="custom1">
+<label for="custom1" class="custom-control-label">Выберите меня</label>
+<div class="invalid-tooltip">Это обязательно выбрать</div>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" name="customform" class="custom-control-input" required id="custom2">
+<label for="custom2" class="custom-control-label">Выберите меня</label>	
+<div class="invalid-tooltip">Это обязательно выбрать</div>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" name="customform" class="custom-control-input" required id="custom3">
+<label for="custom3" class="custom-control-label">Выберите меня</label>	
+<div class="invalid-tooltip">Это обязательно выбрать</div>
+</div>
+</div>
+<br>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>
+
+<h3>Opovesenia</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="alert alert-primary fade show">
+<h4>Opovesenia</h4>
+<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>
+<div class="alert alert-secondary">This is a sec <a href="#" class="alert-link">aler-check </a>it out! 
+<button type="button" data-dismiss="alert" class="close">
+<span>&times;</span>
+</button>
+</div>
+<div class="alert alert-success">This is a sec</div>
+<div class="alert alert-danger">This is a sec</div>
+<div class="alert alert-warning">This is a sec</div>
+<div class="alert alert-info">This is a sec</div>
+<div class="alert alert-light">This is a sec</div>
+<div class="alert alert-dark">This is a sec</div>
+</div>
+</div>
+</div>
+<h3>Znaky</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+Lorem ipsum dolor sit amet,<span class="badge badge-primary">consectetur</span> adipisicing elit. 
+<span class="badge badge-secondary">consectetur</span> adipisicing elit. 
+<span class="badge badge-success">consectetur</span> adipisicing elit. 
+</div>
+</div>
+<p></p>
+KNOPKA
+<button ></button>
+</div>
+<p></p>
+<h3>Хлебные крошки</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<ul class="breadcump">
+<li class="breadcump-item"><a href="#">IVKHK</a></li>
+<li class="breadcump-item"><a href="#">Курсы</a></li>
+<li class="breadcump-item"><a href="#">Bootstrap 4</a></li>
+<li class="breadcump-item"><a href="#">Урок 3 - компоненты</a></li>
+</ul>
+</div>
+<div class="col-12">
+<div class="breadcump">
+<div class="breadcump-item"><a href="#">IVKHK</a></div>
+<div class="breadcump-item"><a href="#">Курсы</a></li>
+<div class="breadcump-item"><a href="#">Bootstrap 4</a></div>
+<div class="breadcump-item"><a href="#">Урок 3 - компоненты</a></div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<h3>Карусель</h3>
+<div class="container">
+		<div class="row">
+		<div class="col-7">
+			<div id="carouselmy" class="carousel my-carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+		<div class="carousel-item active">
+		<img class="d-block w-100" src="img/rys.jpg">
+		<div class="carousel-caption">
+		<h6>Slide 1</h6>
+		<p>Lorem ipsum dolor sit.</p>
+		</div>		
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/redkie-zhivotnie-krasniy-volk.jpg">
+				<div class="carousel-caption">
+					<h6>Slide2</h6>
+					<p>Lorem ipsum</p>
+				</div>
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="img/1.jpg">
+				<div class="carousel-caption">
+				<h6>Slide3</h6>
+					<p>Lorem ipsum</p>
+				</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselMy" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+</a>
+<a class="carousel-control-next" href="#carouselMy" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+</a>
+<ol class="carousel-indicators">
+	<li data-target="#carouselMy" data-slide-to="0" class="active"></li>
+	<li data-target="#carouselMy" data-slide-to="1"></li>
+	<li data-target="#carouselMy" data-slide-to="2"></li>
+	</ol>
+	</div>
+</div>
+</div>
+</div>
+<p></p>
+
+<h3>Коллапс</h3>
+<div class="container">
+		<div class="row">
+		<div class="col-12">
+			<p>
+<button class="btn btn-primary" type="button" data-target="#collapseExample1" data-toggle="collapse"
+aria-controls="#collapseExample1">1</button>
+<button class="btn btn-primary" type="button" data-target="#collapseExample2" data-toggle="collapse"
+aria-controls="#collapseExample1">2</button>
+<button class="btn btn-primary" type="button" data-target=".collapse" data-toggle="collapse"
+aria-controls="collapseExample1 collapseExample2">1,2</button>
+</p>
+<div class="row">
+		<div class="col">
+		<div class="collaple" id="collapseExample1">
+		Anim pariatur cliche a proident.
+		</div>
+		</div>
+		<div class="col">
+		<div class="collaple" id="collapseExample2">
+		Anim pariatur cliche a proident.
+		</div>
+		</div>				
+</div>
+</div>
+</div>
+</div>
+<p></p>
+
+<h3>Аккордеон</h3>
+	<div class="container">
+		<div class="row">
+		<div class="col-12">
+			<div id="accordion">
+		<div class="card">
+			<div class="card-header" id="headingOne">
+				<h5>
+<button class "btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Heading 1</button>
+</h5>
+</div>
+<div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+<div class="card-body">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis, dolores! Consequatur illum fugit reprehenderit, magnam blanditiis asperiores impedit voluptatum est nulla commodi eveniet excepturi beatae possimus ipsum, voluptate sit.</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header" id="headingTwo>
+<h5>
+<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Heading 2</button>
+</h5>
+</div>
+<div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+<div class="card-body">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis, dolores! Consequatur illum fugit reprehenderit, magnam blanditiis asperiores impedit voluptatum est nulla commodi eveniet excepturi beatae possimus ipsum, voluptate sit.</p>
+</div>
+</div>
+</div>
+<div class="card">
+	<div class="card-header" id="headingThree>
+<h5>
+<button class "btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Heading 3</button>
+</h5>
+</div>
+<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+<div class="card-body">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis, dolores! Consequatur illum fugit reprehenderit, magnam blanditiis asperiores impedit voluptatum est nulla commodi eveniet excepturi beatae possimus ipsum, voluptate sit.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<h3>Лист групп</h3>
+<div class="container">
+		<div class="row">
+			<div class="row">
+		<div class="col-4">
+			<div class="list-group" id="list-tab" role="tablist">
+		<a class="list-group-item list-group-item-success active" id="list-home-list" data-toggle="list" href="#list-home">Home
+			<span class="badge badge-primary">25</span>
+		</a>
+		<a class="list-group-item list-group-item-success" id="list-profile-list" data-toggle="list" href="#list-profile">Profile
+<span class="badge badge-primary">25</span>
+		</a>
+<a class="list-group-item list-group-item-success" id="list-messages-list" data-toggle="list" href="#list-messages">Messages
+<span class="badge badge-primary">25</span>
+		</a>
+		<a class="list-group-item list-group-item-success" id="list-settings-list" data-toggle="list" href="#list-settings">Settings
+<span class="badge badge-primary">25</span>
+		</a>
+	</div>
+</div>
+<div class="col-8">
+	<div class="tab-content" id="nav-tabContent">
+		<div class="tab-pane fade show active" id="list-home" aria-labelledby ="list-home-list">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quam consectetur deserunt delectus, maxime natus aperiam libero molestiae beatae.
+	</div>
+	<div class="tab-pane fade" id="list-profile" aria-labelledby ="list-messages-list">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quam consectetur deserunt delectus.
+	</div>
+	<div class="tab-pane fade" id="list-messages" aria-labelledby ="list-home-list">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	</div>
+	<div class="tab-pane fade" id="list-settings" aria-labelledby ="list-settings-list">
+		Lorem ipsum dolor sit amet.
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<p></p>
+
+	<h3>Модальное окно</h3>
+	<div class="container">
+		<div class="row">
+			<button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#Modal">
+Launch demo modal</button>
+<p></p>
+<div class="modal fade" id="Modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+	<div class="modal-header">
+		<h5 class="modal-title">Произвольное окно</h5>
+		<button type="button" class="close" data-dismiss="modal">Close</button>
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a est explicabo vel exercitationem veniam, magni, id delectus enim saepe tempore, provident quia impedit porro fugit veritatis. Enim, veritatis, 
+delectus!</p>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+</div>	
+</div>
+<p></p>	
+
+<h3>Kartocky</h3>
+<div class="container">
+		<div class="row">
+		<div class="col-3">
+		<div class="card">			
+<img class="card-img-top" src="img/1.jpg" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">Панда</h5>
+<p class="card-text">"Oli - ola - olu - ole..."</p>
+<a href="#" class="btn btn-primary">Go to</a>
+</div>
+</div>
+</div>
+<p></p>
+<div class="col-3">
+<div class="card border-success text-white">		
+<img class="card-img" src="img/redkie-zhivotnie-krasniy-volk.jpg" alt="Card image cap">
+<div class="card-img-overlay">
+<h5 class="card-title">Красный волк</h5>
+<p class="card-text">"Уууууууууу - пс..."</p>			
+</div>
+</div>
+</div>
+<p></p>			
+<div class="col-3">
+<div class="card border-warning">
+<div class="card-header">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="card-body">
+<p class="card-text">"Wero moda? Moda Wero!"</p>
+<a href="#" class="btn btn-primary">Go to</a>
+</div>
+</div>
+</div>
+<p></p>
+<div class="col-3">
+<div class="card border-danger">
+<div class="card-body">
+<h5 class="card-title">Рысь</h5>
+<p class="card-text">"Муррр - мяууууууууу..."</p>
+<a href="#" class="btn btn-primary">Go to</a>
+</div>		
+<img class="card-img" src="img/rys.jpg" alt="Card image cap">
+</div>
+</div>
+</div>
+<p></p>
+<div class=row>
+<div class="col-3">
+<div class="card text-right border-info">
+<div class="card-header">
+<h5 class="card-title">Цитата</h5>
+</div>
+<div class="card-body">
+<blockquote>
+<p>"Wero moda? Moda Wero!"</p>
+<div class="blockquote-footer">Описание <cite>Автор</cite></div>
+</blockquote>
+</div>
+</div>
+</div>
+<p></p>						
+<div class="col-3">
+<div class="card text-center border-success">
+<div class="card-header">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="card-body">
+<p class="card-text">"Weronika modnitsa, Wero Moda - style!"</p>
+<a href="#" class="btn btn-secondary">Go to</a>
+</div>			
+<div class="card-footer">
+<h5 class="card-title">Podval</h5>
+</div>			
+</div>
+</div>
+<p></p>	
+<div class="col-3">
+<div class="card text-center bg-danger text-white">
+<div class="card-header">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="card-body">
+<p class="card-text">"Weronika modnitsa, Wero Moda - style!"</p>
+<a href="#" class="btn btn-primary">Go to</a>
+</div>			
+<div class="card-footer">
+<h5 class="card-title">Podval</h5>
+</div>			
+</div>
+</div>
+<p></p>
+<div class="col-3">
+<div class="card text-center bg-warning text-white">
+<div class="card-header">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="card-body">
+<p class="card-text">"Weronika modnitsa, Wero Moda - style!"</p>
+<a href="#" class="btn btn-primary">Go to</a>
+</div>			
+<div class="card-footer">
+<h5 class="card-title">Podval</h5>
+</div>			
+</div>
+</div>
+</div>
+<p></p>
+<div class=row>
+<div class="col-3">
+<div class="card text-center bg-success text-white">
+<div class="card-header">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="card-body">
+<p class="card-text">"Weronika modnitsa, Wero Moda - style!"</p>
+<a href="#" class="btn btn-secondary">Go to</a>
+</div>			
+<div class="card-footer">
+<h5 class="card-title">Podval</h5>
+</div>			
+</div>
+</div>
+<p></p>
+<div class="col-3">
+<div class="card-group">
+<div class="card text-center bg-secondary text-white">
+<div class="card-header border-danger">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="card-body">
+<p class="card-text">"Weronika modnitsa, Wero Moda - style!"</p>
+<a href="#" class="btn btn-primary">Go to</a>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+
+<div class="card text-center border-info">
+<div class="card-header border-info">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="card-body border-info">
+<p class="card-text">"Weronika modnitsa, Wero Moda - style!"</p>
+<a href="#" class="btn btn-primary">Go to</a>
+</div>
+<div class="card-footer border-info">
+<h5 class="card-title">podval</h5>
+</div>
+</div>
+</div>
+<p></p>
+
+<h3>Кнопки,группы кнопок</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<button type="button" class="btn btn-block active btn-lg btn-primary">primary</button>
+<button type="button" class="btn btn-block active btn-lg btn-secondary">secondary</button>
+<button type="button" class="btn btn-block active btn-lg btn-success">success</button>
+<button type="button" disabled class="btn btn-block btn-lg secondary btn-danger">Кнопка</button>
+<button type="button" disabled class="btn btn-block btn-sm btn-warning">кнопка</button>
+<button type="button" disabled class="btn btn-block btn-sm secondary btn-info">Кнопка</button>
+<button type="button" disabled class="btn btn-block btn-sm secondary btn-dark">Кнопка</button>
+<button type="button" disabled class="btn btn-block btn-sm btn-light border-dark">кнопка</button>
+</div>
+<p></p>
+<div class="col-12">
+<button type="button" class="btn btn-block btn-sm btn-outline-primary">primary</button>
+<button type="button" class="btn btn-block btn-sm btn-outline-secondary">secondary</button>
+<button type="button" class="btn btn-block btn-sm btn-outline-success">success</button>
+<button type="button" class="btn btn-block btn-sm btn-outline-danger">Кнопка</button>
+<button type="button" class="btn btn-block btn-lg btn-outline-warning">кнопка</button>
+<button type="button" class="btn btn-block btn-lg btn-outline-info">Кнопка</button>
+<button type="button" class="btn btn-block btn-lg btn-outline-light border-dark">кнопка</button>
+<button type="button" class="btn btn-block btn-lg btn-outline-dark">Кнопка</button>
+</div>
+</div>
+<p></p>
+<div class="row">
+<div class="col-12">
+<input type="submit" value="submit" class="btn btn-lg btn-outline-dark">
+<input type="reset" value="reset" class="btn btn-lg btn-outline-dark">
+<input type="button" value="button" class="btn btn-lg btn-outline-dark">
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-outline-success "btn-group-toggle">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Сhecked
+  </label>
+  </div>
+  <p></p>
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-outline-success active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Сhecked
+  </label>
+  
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+  </label>
+  <label class="btn btn-success">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+  </label>
+</div>
+<p></p>
+<div class="col-12">
+<div class="btn-group-toggle" data-toggle="buttons">
+<button type="button" class="btn btn-outline-success">success</button>
+<button type="button" class="btn btn-outline-warning">warning</button>
+<button type="button" class="btn btn-outline-info">info</button>
+</div>
+<p></p>
+<div class="btn-toolbar">
+<div class="btn-group-vertical btn-group-lg btn-group-toggle mr-2" data-toggle="buttons">
+<button type="button" class="btn btn-success">1</button>
+<button type="button" class="btn btn-warning">2</button>
+<button type="button" class="btn btn-info">3</button>
+<button type="button" class="btn btn-danger">4</button>
+</div>
+<div class="btn-group btn-group-toggle mr-2" data-toggle="buttons">
+<button type="button" class="btn btn-success">1</button>
+<button type="button" class="btn btn-warning">2</button>
+<button type="button" class="btn btn-danger">3</button>
+</div>
+<div class="btn-group group-sm btn-group-toggle" data-toggle="buttons">
+<button type="button" class="btn btn-success">1</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+
+
+<h3>Выпадающие списки</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="dropdown btn-group">
+<button class="btn btn-info" type="button">
+Выпадающий списok</button>
+<button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"></button>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+<h6 class=""dropdown-header">Имя меню</h6>
+<a class=""dropdown-item" href="#">Меню</a>
+<a class=""dropdown-item" disabled href="#">Меню</a>
+<a class=""dropdown-item" href="#">Меню</a>
+<div class=""dropdown-divider"></div> 
+<a class=""dropdown-item" href="#">Меню</a>
+<a class=""dropdown-item" href="#">Меню</a>
+</div>
+</div>
+<div class="dropdown btn-group">
+<button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">Выпадающий списok</button>
+<div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+<h6 class=""dropdown-header">Имя меню</h6>
+<a class=""dropdown-item" href="#">Меню</a>
+<a class=""dropdown-item" disabled href="#">Меню</a>
+<a class=""dropdown-item" href="#">Меню</a>
+<div class=""dropdown-divider"></div> 
+<a class=""dropdown-item" href="#">Меню</a>
+<a class=""dropdown-item" href="#">Меню</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<h3>Пагинация формы</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<form>
+<div class="form-group row">
+<label class="col-3" for="exampleInputEmail1">Email адрес</label>
+	<input type="email" class="form-control col-9" id="exampleInputEmail1" aria-describedby="emailHelp"
+	placeholder="Email адрес">
+	<small id="emailHelp" class="col-9 offset-3">Мы никогда не будем делиться вашей электронной почтой с кем-либо ещё.</small>
+	</div>
+<div class="form-group row">
+<label class="col-3" for="exampleInputPassword1">Пароль</label>
+<input readonly type="password" class="form-control col-9" id="exampleInputPassword1" placeholder="Пароль">
+</div>
+<div class="form-group">
+<label for="exampleFormControlSelect1">Example select</label>
+<select class="form-control" id="exampleFormControlSelect1">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+<div class="form-row">
+<div class="form-check-inline">
+<input type="checkbox" class="form-check-input" id="exampleheck1" disabled>
+<label class="form-check-label" for="exampleCheck1">1</label>
+</div>
+<div class="form-check-inline">
+<input type="checkbox" class="form-check-input" id="exampleheck1" disabled>
+<label class="form-check-label" for="exampleCheck1">2</label>
+</div>
+</div>
+<button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+</div>
+</div>
+<h3>Инпут группы</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<form>
+<div class="input-group mb-3">
+<input type="email" class="form-control" placeholder="Email адрес" aria-describedby="basic-addont1">
+<div class="input-group-append">
+<button type="button" class="btn btn-info">Наша кнопка</button>
+<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Наша кнопка</button>
+<div class="dropdown-menu">
+<div class="dropdown-item">menu</div>
+<div class="dropdown-item">menu</div>
+<div class="dropdown-item">menu</div>
+<div class="dropdown-item">menu</div>
+</div>
+</div>
+</div>
+<div class="input-group mb-3">
+<input type="password" class="form-control" placeholder="пароль" aria-describedby="basic-addont2">
+<div class="input-group-append">
+<span class="input-group-text" id="basic-addont2">@example.com</span>
+</div>
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<div class="input-group-text">
+<input type="checkbox" aria-label="Checkbox for following text input">
+</div>
+</div>
+<input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<div class="input-group-text">
+Lorem ipsum...
+</div>
+</div>
+<input type="text" class="form-control">
+<input type="text" class="form-control">
+</div>
+<button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+</div>
+</div>
+
+
+
+<h3>Подсказки</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<button style="margin-left: 300px;" type="button" class="btn btn-lg btn-danger" data-placement="bottom" data-toggle="tooltip" title="Name popover" data-content="And here's some amazing content. It's very engaging. Right?">
+Click to toggle popover</button>
+
+<span class="" data-toggle="tooltip" title="Name popover" data-content="Disabled popover">
+<button class="btn btn-primary" type="button">Disabled button</button>
+</span>
+</div>
+</div>
+</div>
+
+<h3>Прогресс бар</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="progress mb-2" style="height: 30px;">
+<div class="progress-bar bg-warning progress-bar-striped" style="width: 45%" >45%</div>
+</div>
+<div class="progress mb-2" style="height: 50px;">
+<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 10%" >10%</div>
+<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 20%" >20%</div>
+<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 45%" >45%</div>
+</div>
+<div class="progress mb-2">
+<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 20%" >20%</div>
+</div>
+</div>
+<h3>Скроллинг</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+<a class="navbar-brand" href="#">Navbar</a>
+<ul class="nav nav-pills">
+<li class="nav-item">
+<a class="nav-link" href="#fat">@fat</a>
+</li>
+<a class="nav-link" href="#mdo">@mdo</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Dropdown</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#one">one</a>
+<a class="dropdown-item" href="#two">two</a>
+<div role="separator" class="dropdown-divider"></div>
+<a class="dropdown-item" href="#three">three</a>
+</div>
+</li>
+</ul>
+</nav>
+<div data-spy"="scroll" data-target="#navbar-example2" style="position: relative;
+height: 400px;
+overflow: auto;">
+<h4 id="fat">@fat</h4>
+<p> Каждый человек не может представить свою жизнь без современных телефонов и компьютеров. Они открывают нам доступ к огромному количеству информации в интернете. Мы читаем новости, общаемся с друзьями и незнакомцами, отдыхаем и развлекаемся с помощью различных девайсов. И несмотря на большое разнообразие информации и возможностей, большинство россиян чаще всего используют интернет для просмотра социальных сетей. К сожалению, качество информации в этих источниках очень низкое.
+
+everbly.com были созданы, чтобы дать вам возможность весело и разнообразно провести время в интернете с пользой для себя. Вместо просмотра некачественного контента в социальных сетях вы теперь можете проходить интересные тесты на эрудицию, кругозор и знания в определенных сферах. Коллекция наших тестов постоянно пополняется, так как их создают целая команда профессиональных специалистов. Они продумывают каждый вопрос, чтобы вы могли найти тест подходящего уровня сложности. Мы предлагаем как сложные тесты на эрудицию, так и простые развлекательные и психологические тесты, результаты которых вас удивят!
+
+Есть у вас всего минута или целый час, вы можете быть уверены, что проведете это время с пользой, получите удовольствие и сможете по-настоящему отвлечься от забот и рутины. Многие наши пользователи проходят по несколько тестов за один сеанс. Например, вы можете начать со сложного теста на знания. Так вы сможете себя проверить и подумать над вопросами, на которые мало кто может сходу ответить. А после этого пройдите развлекательный тест на знание вашего любимого фильма и обновите те положительные эмоции, полученные от его просмотра! </p>
+<h4 id="mdo">@mdo</h4>
+<p> Каждый человек не может представить свою жизнь без современных телефонов и компьютеров. Они открывают нам доступ к огромному количеству информации в интернете. Мы читаем новости, общаемся с друзьями и незнакомцами, отдыхаем и развлекаемся с помощью различных девайсов. И несмотря на большое разнообразие информации и возможностей, большинство россиян чаще всего используют интернет для просмотра социальных сетей. К сожалению, качество информации в этих источниках очень низкое.
+
+everbly.com были созданы, чтобы дать вам возможность весело и разнообразно провести время в интернете с пользой для себя. Вместо просмотра некачественного контента в социальных сетях вы теперь можете проходить интересные тесты на эрудицию, кругозор и знания в определенных сферах. Коллекция наших тестов постоянно пополняется, так как их создают целая команда профессиональных специалистов. Они продумывают каждый вопрос, чтобы вы могли найти тест подходящего уровня сложности. Мы предлагаем как сложные тесты на эрудицию, так и простые развлекательные и психологические тесты, результаты которых вас удивят!
+
+Есть у вас всего минута или целый час, вы можете быть уверены, что проведете это время с пользой, получите удовольствие и сможете по-настоящему отвлечься от забот и рутины. Многие наши пользователи проходят по несколько тестов за один сеанс. Например, вы можете начать со сложного теста на знания. Так вы сможете себя проверить и подумать над вопросами, на которые мало кто может сходу ответить. А после этого пройдите развлекательный тест на знание вашего любимого фильма и обновите те положительные эмоции, полученные от его просмотра! </p>
+<h4 id="one">one</h4>
+<p> Каждый человек не может представить свою жизнь без современных телефонов и компьютеров. Они открывают нам доступ к огромному количеству информации в интернете. Мы читаем новости, общаемся с друзьями и незнакомцами, отдыхаем и развлекаемся с помощью различных девайсов. И несмотря на большое разнообразие информации и возможностей, большинство россиян чаще всего используют интернет для просмотра социальных сетей. К сожалению, качество информации в этих источниках очень низкое.
+
+everbly.com были созданы, чтобы дать вам возможность весело и разнообразно провести время в интернете с пользой для себя. Вместо просмотра некачественного контента в социальных сетях вы теперь можете проходить интересные тесты на эрудицию, кругозор и знания в определенных сферах. Коллекция наших тестов постоянно пополняется, так как их создают целая команда профессиональных специалистов. Они продумывают каждый вопрос, чтобы вы могли найти тест подходящего уровня сложности. Мы предлагаем как сложные тесты на эрудицию, так и простые развлекательные и психологические тесты, результаты которых вас удивят!
+
+Есть у вас всего минута или целый час, вы можете быть уверены, что проведете это время с пользой, получите удовольствие и сможете по-настоящему отвлечься от забот и рутины. Многие наши пользователи проходят по несколько тестов за один сеанс. Например, вы можете начать со сложного теста на знания. Так вы сможете себя проверить и подумать над вопросами, на которые мало кто может сходу ответить. А после этого пройдите развлекательный тест на знание вашего любимого фильма и обновите те положительные эмоции, полученные от его просмотра! </p>
+<h4 id="two">two</h4>
+<p> Каждый человек не может представить свою жизнь без современных телефонов и компьютеров. Они открывают нам доступ к огромному количеству информации в интернете. Мы читаем новости, общаемся с друзьями и незнакомцами, отдыхаем и развлекаемся с помощью различных девайсов. И несмотря на большое разнообразие информации и возможностей, большинство россиян чаще всего используют интернет для просмотра социальных сетей. К сожалению, качество информации в этих источниках очень низкое.
+
+everbly.com были созданы, чтобы дать вам возможность весело и разнообразно провести время в интернете с пользой для себя. Вместо просмотра некачественного контента в социальных сетях вы теперь можете проходить интересные тесты на эрудицию, кругозор и знания в определенных сферах. Коллекция наших тестов постоянно пополняется, так как их создают целая команда профессиональных специалистов. Они продумывают каждый вопрос, чтобы вы могли найти тест подходящего уровня сложности. Мы предлагаем как сложные тесты на эрудицию, так и простые развлекательные и психологические тесты, результаты которых вас удивят!
+
+Есть у вас всего минута или целый час, вы можете быть уверены, что проведете это время с пользой, получите удовольствие и сможете по-настоящему отвлечься от забот и рутины. Многие наши пользователи проходят по несколько тестов за один сеанс. Например, вы можете начать со сложного теста на знания. Так вы сможете себя проверить и подумать над вопросами, на которые мало кто может сходу ответить. А после этого пройдите развлекательный тест на знание вашего любимого фильма и обновите те положительные эмоции, полученные от его просмотра! </p>
+<h4 id="three">three</h4>
+<p>Каждый человек не может представить свою жизнь без современных телефонов и компьютеров. Они открывают нам доступ к огромному количеству информации в интернете. Мы читаем новости, общаемся с друзьями и незнакомцами, отдыхаем и развлекаемся с помощью различных девайсов. И несмотря на большое разнообразие информации и возможностей, большинство россиян чаще всего используют интернет для просмотра социальных сетей. К сожалению, качество информации в этих источниках очень низкое.
+
+everbly.com были созданы, чтобы дать вам возможность весело и разнообразно провести время в интернете с пользой для себя. Вместо просмотра некачественного контента в социальных сетях вы теперь можете проходить интересные тесты на эрудицию, кругозор и знания в определенных сферах. Коллекция наших тестов постоянно пополняется, так как их создают целая команда профессиональных специалистов. Они продумывают каждый вопрос, чтобы вы могли найти тест подходящего уровня сложности. Мы предлагаем как сложные тесты на эрудицию, так и простые развлекательные и психологические тесты, результаты которых вас удивят!
+
+Есть у вас всего минута или целый час, вы можете быть уверены, что проведете это время с пользой, получите удовольствие и сможете по-настоящему отвлечься от забот и рутины. Многие наши пользователи проходят по несколько тестов за один сеанс. Например, вы можете начать со сложного теста на знания. Так вы сможете себя проверить и подумать над вопросами, на которые мало кто может сходу ответить. А после этого пройдите развлекательный тест на знание вашего любимого фильма и обновите те положительные эмоции, полученные от его просмотра! </p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<h3>Адаптивное видео</h3>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T-TYyGL9Qjg" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<p></p>
+<div class="col-3">
+<div class="card">
+<div class="card-header">
+<h5 class="card-title">Имя карточки</h5>
+</div>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T-TYyGL9Qjg" allowfullscreen></iframe>
+</div>
+<div class="card-body">
+<p class="card-text">Далеко-далеко за ...</p>
+<a href="#" class="btn btn-danger">Go somewhere</a>
+</div>
+</div>
+</div><br>
+<div class="col-3">
+<div class="card text-center bg-warning text-white">
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T-TYyGL9Qjg" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+
+<h3>Footer</h3>
+<div class="container-expand-sm fixed-bottom bg-dark text-center text-white">
+<div class="row">
+<div class="col-12">
+<p>SKTVp18&masterSL Corporation 2019</p>
+</div>
+</div>
+</div>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
